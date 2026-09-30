@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Usuários</h1>
+        <p>Preencha o formulário abaixo para criar sua conta.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Conheça nossa plataforma</h2>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1786860373815-496ea42e0d0a?q=80&w=2043&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Imagem ilustrativa da plataforma"
+                    id="imgPreferencia"
+                >
+                <figcaption>Faça parte da nossa comunidade.</figcaption>
+            </figure>
+        </section>
+
+        
+
+        <section>
+            <h2>Formulário de Cadastro</h2>
+
+            <form method="post" id="formCadastro">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div>
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input
+                        type="date"
+                        id="datanascimento"
+                        name="data-nascimento"
+                    >
+                </div>
+
+                <div>
+                    <label for="senha">link de uma imagem do seu pokemon favorito</label>
+                    <input type="url" id="urlImagem" name="urlImagem" />
+                </div>
+
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="sectionDados">
+            <h2>Dados cadastrados:</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Minha Plataforma</p>
+    </footer>
+
+</body>
+</html>
